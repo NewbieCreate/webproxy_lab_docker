@@ -47,20 +47,17 @@ proxy: proxy.o csapp.o
 echo.o: echo.c csapp.h
 	$(CC) $(CFLAGS) -c echo.c
 
-# echoserver - echo.o 포함!
 echoserver.o: echoserver.c csapp.h
 	$(CC) $(CFLAGS) -c echoserver.c
 
 echoserver: echoserver.o echo.o csapp.o
 	$(CC) $(CFLAGS) -o echoserver echoserver.o echo.o csapp.o $(LDFLAGS)
 
-# echoclient
 echoclient.o: echoclient.c csapp.h
 	$(CC) $(CFLAGS) -c echoclient.c
 
 echoclient: echoclient.o csapp.o
 	$(CC) $(CFLAGS) -o echoclient echoclient.o csapp.o $(LDFLAGS)
-
 
 clean:
 	rm -f *~ *.o proxy echoserver echoclient core *.tar *.zip *.gzip *.bzip *.gz

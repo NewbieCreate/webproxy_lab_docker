@@ -12,7 +12,10 @@
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "C_Cpp.default.includePath": [
                     "/usr/include",
-                    "/usr/local/include"
+                    "/usr/local/include",
+                    "${workspaceFolder}/tiny",
+                    "${workspaceFolder}/tiny/cgi-bin",
+                    "${workspaceFolder}"
                 ],
                 "C_Cpp.default.compilerPath": "/usr/bin/gcc"
             }
