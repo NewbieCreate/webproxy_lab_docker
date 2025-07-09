@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "csapp.h": "c",
+        "pthread.h": "c",
+        "setjmp.h": "c",
+        "errno.h": "c"
+    }
+}
